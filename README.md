@@ -1,5 +1,4 @@
-https://img.shields.io/pypi/dm/iitbbscliupdates.svg
-
+![PyPI - Downloads](https://img.shields.io/pypi/dm/iitbbscliupdates.svg)
 ## IIT Bhubaneswar CLI
 CLI to get the following stuff related to institute:
 * Holidays List for the current year.
