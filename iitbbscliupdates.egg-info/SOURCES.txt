@@ -1,7 +1,10 @@
+MANIFEST.in
 README.md
 setup.py
 iitbbscli/__init__.py
 iitbbscli/app.py
+iitbbscli/s.html
+iitbbscli/s.txt
 iitbbscliupdates.egg-info/PKG-INFO
 iitbbscliupdates.egg-info/SOURCES.txt
 iitbbscliupdates.egg-info/dependency_links.txt

@@ -1,0 +1,430 @@
+
+<html>
+<head>
+<title>ERP-IIT BBS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../lib/css/styles.css" type="text/css">
+<link rel='stylesheet' id='stylesheet-css'  href='../lib/css/stylesheet.minc34d.css?ver=3.8.10' type='text/css' media='all' />
+
+        <script type='text/javascript' src='../lib/js/jquery-migrate.min1576.js?ver=1.2.1'></script>
+        <script type='text/javascript' src='../lib/js/jquery3e5a.js?ver=1.10.2'></script>
+</head>
+
+<div align="center"><noscript>
+   <div style="position:fixed; top:0px; left:0px; z-index:3000; height:100%; width:100%; background-color:#FFFFFF">
+   <div style="font-family: Trebuchet MS; font-size: 14px; background-color:#FFF000; padding: 10pt;">Oops! It appears that you have disabled your Javascript. In order for you to see this page as it is meant to appear, we ask that you please re-enable your Javascript!</div></div>
+   </noscript></div>
+
+<script type="text/javascript">
+function disableSelection(e){if(typeof e.onselectstart!="undefined")e.onselectstart=function(){return false};else if(typeof e.style.MozUserSelect!="undefined")e.style.MozUserSelect="none";else e.onmousedown=function(){return false};e.style.cursor="default"}window.onload=function(){disableSelection(document.body)}
+</script>
+
+<script type="text/javascript">
+document.oncontextmenu=function(e){var t=e||window.event;var n=t.target||t.srcElement;if(n.nodeName!="A")return false};
+document.ondragstart=function(){return false};
+</script>
+
+<style type="text/css">
+/* :(input, textarea) {
+//	-webkit-touch-callout:none;
+//	-webkit-user-select:none;
+//*}
+</style>
+
+<style type="text/css">
+img {
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+}
+</style>
+
+<script type="text/javascript">
+//window.addEventListener("keydown",function(e){if(e.ctrlKey&&(e.which==65||e.which==66||e.which==67||e.which==70||e.which==73||e.which==80||e.which==83||e.which==85||e.which==86)){e.preventDefault()}});document.keypress=function(e){if(e.ctrlKey&&(e.which==65||e.which==66||e.which==70||e.which==67||e.which==73||e.which==80||e.which==83||e.which==85||e.which==86)){}return false}
+</script>
+
+<script type="text/javascript">
+document.onkeydown=function(e){e=e||window.event;if(e.keyCode==123||e.keyCode==18){return false}}
+</script>
+
+<body class="noheader" >
+<div id="container">
+	<div id="header">
+	<table><tr><td style="width:100px;padding-top:10px;"><img src="../lib/img/images/iitb.png" id="logo"/></td>
+    	<td valign="center"><h1><a href="#">E-Information Management System IIT Bhubaneswar</a></h1></td>
+	<td>&nbsp;</td>
+	</tr></table>
+        <div class="clear"></div>
+    </div>
+
+    <div id="nav">
+                <pre> <a href="../menu.php">Main Menu</a>|<a href="../passwordchange/password_change.php">Password Change</a>|<a href="../logout.php">Log Out</a></pre>
+            </div>
+
+<div id="body">            
+    <div id="content">
+        <div class="box" >
+        
+        <h3 style="color:red;"> </h3>
+            <table border="1" cellspacing="0" cellpadding="3" class="table" bordercolor="#CCCCCC" width="100%" >
+                    <thead>
+                        <tr>
+                            <th >
+                                Subject Code	
+                            </th>
+                            <th >
+                                Subject Name	
+                            </th>
+                            <th >
+                                	Attended
+                            </th>
+                            <th >
+                                	Conducted
+                            </th>
+                            <th >
+                                	%
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                            <td >
+                                ID2L003	
+                            </td>
+                            <td >
+                                Environmental Science, Technology and Management	
+                            </td>
+                            <td >
+                                18	
+                            </td>
+                             <td >
+                                22	
+                            </td>
+                            <td >
+                                81.82	
+                            </td>
+                        </tr><tr>
+                            <td >
+                                EE2L003	
+                            </td>
+                            <td >
+                                Electric Machines	
+                            </td>
+                            <td >
+                                45	
+                            </td>
+                             <td >
+                                50	
+                            </td>
+                            <td >
+                                90	
+                            </td>
+                        </tr><tr>
+                            <td >
+                                EC2L006	
+                            </td>
+                            <td >
+                                Digital Electronics and Microprocessor	
+                            </td>
+                            <td >
+                                44	
+                            </td>
+                             <td >
+                                50	
+                            </td>
+                            <td >
+                                88	
+                            </td>
+                        </tr><tr>
+                            <td >
+                                EE2L001	
+                            </td>
+                            <td >
+                                Network Theory	
+                            </td>
+                            <td >
+                                47	
+                            </td>
+                             <td >
+                                50	
+                            </td>
+                            <td >
+                                94	
+                            </td>
+                        </tr><tr>
+                            <td >
+                                EE2P003	
+                            </td>
+                            <td >
+                                Electric Machines Laboratory	
+                            </td>
+                            <td >
+                                11	
+                            </td>
+                             <td >
+                                22	
+                            </td>
+                            <td >
+                                50	
+                            </td>
+                        </tr><tr>
+                            <td >
+                                EC2P006	
+                            </td>
+                            <td >
+                                Digital Electronics and Microprocessor Laboratory	
+                            </td>
+                            <td >
+                                9	
+                            </td>
+                             <td >
+                                11	
+                            </td>
+                            <td >
+                                81.82	
+                            </td>
+                        </tr><tr>
+                            <td >
+                                EC2L007	
+                            </td>
+                            <td >
+                                Communication Systems	
+                            </td>
+                            <td >
+                                26	
+                            </td>
+                             <td >
+                                32	
+                            </td>
+                            <td >
+                                81.25	
+                            </td>
+                        </tr><tr>
+                            <td >
+                                HS2L005	
+                            </td>
+                            <td >
+                                General Studies and Current Affairs - 1	
+                            </td>
+                            <td >
+                                0	
+                            </td>
+                             <td >
+                                0	
+                            </td>
+                            <td >
+                                0	
+                            </td>
+                        </tr> </tbody>
+                </table>    </div>
+        </div>
+<div class="sidebar">
+    <nav class="vertical_menu dropdown_animation vertical_menu_toggle">
+
+                        <ul id="menu-top_menu" class="">
+
+
+<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../stu_info/hinid_name.php" class=""><i class="menu_icon fa blank"></i><span>Add Hindi Name<img src="../lib/img/new.gif" alt="new" height="11" width="28" border="0"></span><span class="plus"></span></a>                               
+                            </li>
+
+                            <li id="nav-menu-item-9723" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children  has_sub narrow"><a href="#" class=" current "><i class="menu_icon fa blank"></i><span>Attendance</span><span class="plus"></span></a>
+                                <div class="second">
+                                    <div class="inner">
+                                        <ul>
+                                            <li id="nav-menu-item-14534" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-14468 current_page_item "><a href="../biometric/list_students.php" class=""><i class="menu_icon fa blank"></i><span>Report</span><span class="plus"></span></a></li>
+                                            <li id="nav-menu-item-14842" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../biometric/list_students_date_wise.php" class=""><i class="menu_icon fa blank"></i><span>Report Date wise</span><span class="plus"></span></a></li>
+                                         </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            
+
+
+<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../mislinious/english_results.php" class=""><i class="menu_icon fa blank"></i><span>English Diagnostic Test Result</span><span class="plus"></span></a>
+                            </li>
+
+<!--<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../apps/survey/index.php" class=""><i class="menu_icon fa blank"></i><span>6<sup>th</sup> Convocation</span><span class="plus"></span><img src="../lib/img/new.gif" alt="new" height="11" width="28" border="0"></a></li>-->
+			  
+                            
+                             
+
+			  
+                             <li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../mcm/afresh_app.php" class=""><i class="menu_icon fa blank"></i><span>MCM(Afresh)</span><span class="plus"></span></a>
+                               
+                            </li>
+                            <!--<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../mcm/application_afresh.php" class=""><i class="menu_icon fa blank"></i><span>MCM(fresh)<img src="../lib/img/new.gif" alt="new" height="11" width="28" border="0"></span><span class="plus"></span></a>
+                               
+                            </li>
+			    <li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../fee_remission/application_year1.php" class=""><i class="menu_icon fa blank"></i><span>Tuition Fee Remission Application<img src="../lib/img/new.gif" alt="new" height="11" width="28" border="0"></span><span class="plus"></span></a>                               
+                            </li>-->
+
+                               
+			
+
+			
+                            <!--<li id="nav-menu-item-9723" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children  has_sub narrow"><a href="#" class=" current "><i class="menu_icon fa blank"></i><span>Registration</span><span class="plus"></span></a>
+                                <div class="second">
+                                    <div class="inner">
+                                        <ul>
+                                            <li id="nav-menu-item-14534" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-14468 current_page_item "><a href="../Registration/view.php" class=""><i class="menu_icon fa blank"></i><span>Core / Backlogs Subjects</span><span class="plus"></span></a></li>
+                                            <li id="nav-menu-item-14842" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../Registration/registrationForm.php" class=""><i class="menu_icon fa blank"></i><span>Pre Registration</span><span class="plus"></span></a></li>
+                                             <li id="nav-menu-item-14091" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../Registration/registration.php" class=""><i class="menu_icon fa blank"></i><span>Sem Registration</span><span class="plus"></span></a></li>
+                                            <li id="nav-menu-item-14619" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../Registration/registration_reg.php" class=""><i class="menu_icon fa blank"></i><span>Registred Subjects</span><span class="plus"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>-->
+				 
+<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../Exam_location/index.php" class=""><i class="menu_icon fa blank"></i><span>Exam Location<!--<img src="../lib/img/new.gif" alt="new" height="11" width="28" border="0">--></span><span class="plus"></span></a>
+                               
+                            </li>
+                            <!--<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../Registration/view.php" class=""><i class="menu_icon fa blank"></i><span>Core / Backlogs Subjects</span><span class="plus"></span></a>
+                               
+                            </li>
+                            <li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../Registration/registrationstudent.php" class=""><i class="menu_icon fa blank"></i><span>Autumn Registration</span><span class="plus"></span></a></a>
+                               
+                            </li>
+			   <li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../Registration/registrationForm.php" class=""><i class="menu_icon fa blank"></i><span>Pre Registration</span><span class="plus"></span><img src="../lib/img/new.gif" alt="new" height="11" width="28" border="0"></a>
+                               
+                            </li>-->
+                             
+			<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../Registration/registrationstudent.php" class=""><i class="menu_icon fa blank"></i><span>Spring Registration</span><span class="plus"></span></a>
+                               
+                            </li>
+                            			<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../Registration/preRegList.php" class=""><i class="menu_icon fa blank"></i><span>Pre-Registration Alloted subjects</span><span class="plus"></span></a>
+                               
+                            </li>
+                            <!--<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../feedback/course_faculty_list.php" class=""><i class="menu_icon fa blank"></i><span>Feedback</span><span class="plus"></span><img src="../lib/img/new.gif" alt="new" height="11" width="28" border="0"></a>
+                               
+                            </li>-->
+                            <li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../Result/results.php" class=""><i class="menu_icon fa blank"></i><span>Result</span><span class="plus"></span></a>
+                                
+                            </li>
+                              
+                            
+                            
+				<!--<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../fee_remission/application.php" class=""><i class="menu_icon fa blank"></i><span>Tuition Fee Remission Application</span><span class="plus"></span></a>
+                            </li>-->
+                               
+
+  				  
+                              
+                            <!--<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../mcm/application.php" class=""><i class="menu_icon fa blank"></i><span>MCM SCHOLARSHIP Application</span><span class="plus"></span></a>
+                            </li>-->
+				
+                               
+
+			  
+                             
+				<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../apps/forms/index.php" class=""><i class="menu_icon fa blank"></i><span>Forms/Notifications</span><span class="plus"></span></a>
+                            </li>
+<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="../studen_info/step1.php" class=""><i class="menu_icon fa blank"></i><span>Profile</span><span class="plus"></span></a></li>
+                            
+                        </ul>			
+                    </nav>     
+</div><div class="clear"></div><br></div>
+</div>
+<div id="footer">
+    <div id="footer-links">
+	    <p><i class="text">&copy; 2016 <a target="_blank" href="http://www.iitbbs.ac.in/">www.iitbbs.ac.in</a>. All rights reserved.<br>
+		Best viewed in Firefox 5.0.1 and above.</i></p>
+    </div>  
+</div>
+<script type='text/javascript' src='../lib/js/plugins.js?ver=3.8.10'></script>
+<script type='text/javascript' src='../lib/js/default.min.js?ver=3.8.10'></script>
+<script type='text/javascript' src="./../lib/js/jquery.min.js"></script>
+
+
+<link href="./../lib/css/select2.min.css" rel="stylesheet">
+<script type="text/javascript" src="./../lib/js/datetimepicker_css.js"></script>
+<link href="./../lib/css/arrow.css" rel="stylesheet" type="text/css" />
+<script src="./../lib/js/select2.min.js"></script>
+<script type='text/javascript'>
+$( document ).ready(function() {
+
+
+    var nav = $('#sidebar');
+    var navHomeY = nav.offset().top;
+    var isFixed = false;
+    
+    var $w = $(window);
+    $w.scroll(function() {
+        var scrollTop = $w.scrollTop();
+        
+        var shouldBeFixed = scrollTop > navHomeY;
+        if (shouldBeFixed && !isFixed) {
+            nav.css({
+                position: 'fixed',
+                top: 0,
+                left: nav.offset().left,
+                width: nav.width()
+            });
+            isFixed = true;
+        }
+        else if (!shouldBeFixed && isFixed)
+        {
+            nav.css({
+                position: 'static'
+            });
+            isFixed = false;
+        }
+    });
+​});
+</script>
+<script type="text/javascript">
+
+
+            $(window).load(function () {
+
+                $(document).ready(function () {
+                    $(".js-example-basic-single").select2();
+                });
+
+            });
+
+        </script>
+
+        
+    <script type="text/javascript" src="./../lib/js/jquery-1.6.4.min.js"></script>
+    <script src="./../lib/js/jquery.tablesorter.js" type="text/javascript"></script>
+    <link href="./../lib/css/main.css" rel="stylesheet" type="text/css" />
+    
+  
+ 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#my-table-sorter").tablesorter();
+        });
+        $('#select-all').click(function(event) {   
+    if(this.checked) {
+        // Iterate each checkbox
+        $(':checkbox').each(function() {
+            this.checked = true;                        
+        });
+    }else{
+        $(':checkbox').each(function() {
+            this.checked = false;                        
+        });
+    }
+});
+    </script> 
+<style>
+div.box {
+    
+    overflow: auto;
+}
+
+</style>
+
+<script src="table2excel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btnExport").click(function () {
+                $(".tableWrap").table2excel({
+                    filename: "Table.xls"
+                });
+            });
+        });
+    </script>
+</body>
+</html>
