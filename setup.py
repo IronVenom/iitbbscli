@@ -4,8 +4,9 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
+	include_package_data=True,
     name="iitbbscliupdates",
-    version="1.2",
+    version="1.3.1",
     author="Atharva Kulkarni",
     author_email="amk11@iitbbs.ac.in",
     license='MIT',
