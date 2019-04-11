@@ -27,4 +27,4 @@ $ iitbbscli headlines
 ```
 $ iitbbscli attendance
 ```
-Then enter the username and password and press enter.
+Then enter the username and password and press enter. Note that this command may not work from the root directory ( C folder, for example) so move onto your desktop or anywhere else for this command. This bug will be fixed in the next update.
