@@ -22,3 +22,8 @@ $ iitbbscli holidays
 ```
 $ iitbbscli headlines
 ```
+4. To get the biometric attendance:
+```
+$ iitbbscli attendance
+```
+Then enter the username and password and press enter.

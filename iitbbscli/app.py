@@ -2,6 +2,7 @@ import click
 import requests
 import bs4
 from prettytable import PrettyTable
+import mechanize
 
 @click.group()
 def main():
@@ -9,6 +10,7 @@ def main():
 
 @main.command(help = "Gives a list of holidays")
 def holidays():
+	
 	#Getting Data from website using net scraping.
 	hols_html = requests.get('http://www.iitbbs.ac.in/holidays-list.php')
 	holidays = bs4.BeautifulSoup(hols_html.text, 'lxml')
@@ -51,12 +53,62 @@ def holidays():
 
 @main.command(help = "Headlines")
 def headlines():
+
 	raw = (bs4.BeautifulSoup((requests.get('http://www.iitbbs.ac.in/news.php')).text,'lxml')).select('ol a b')
 	headlines = [raw[x].getText().split('\n') for x in range(1,len(raw)-1)]
 	news_table = PrettyTable(['S.no','Headlines'])
 	for sn,x in enumerate(headlines):
 		news_table.add_row([sn+1,x[0]])
 	print(news_table)
+
+@main.command(help = "Gives attendance")
+def attendance():
+
+	username = input('Enter username\n')
+	password = input('Enter password\n')
+
+	br = mechanize.Browser()
+	br.open("http://erp.iitbbs.ac.in/")
+	br.select_form(nr=0)
+	br['email'] = username
+	br['password'] = password
+	br.submit()
+	result = br.response()
+	html=result.read()
+	br.open('http://erp.iitbbs.ac.in//biometric/list_students.php')
+
+	result = br.response()
+	html=result.read()
+	f = open('s.txt','wb')
+	f.write(html)
+
+	contents = open("s.txt","r")
+	with open("s.html", "w") as e:
+	    for lines in contents.readlines():
+	        e.write(lines + "\n")
+
+	s = bs4.BeautifulSoup(open('s.html'),'lxml')
+	p = s.find('table',{'class':'table'})
+	q = p.find_all('td')
+	q = [str(i) for i in q]
+	q = [i.replace(" ", "") for i in q]
+	r = [i.split('\n')[2] for i in q]
+	r = [i.split('\t')[0] for i in r]
+	ids = r[0::5]
+	courses = r[1::5]
+	present = r[2::5]
+	total = r[3::5]
+	percentage = r[4::5]
+	percentage = [i+'%' for i in percentage]
+	biometric_attendance = PrettyTable(['Course ID','Course Name','Present','Total','Percenage'])
+	attendance = []
+	for i in range(len(ids)):
+		attendance.append([ids[i],courses[i],present[i],total[i],percentage[i],])
+
+	for x in attendance:
+			biometric_attendance.add_row(x)
+
+	print(biometric_attendance)
 
 if __name__ == '__main__':
 	main()

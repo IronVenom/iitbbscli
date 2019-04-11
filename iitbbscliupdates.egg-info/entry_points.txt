@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    iitbbscli  = iitbbscli.app:main
+    

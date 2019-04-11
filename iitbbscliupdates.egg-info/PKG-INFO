@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: iitbbscliupdates
+Version: 1
+Summary: CLI for IIT Bhubaneswar updates.
+Home-page: https://github.com/IronVenom/IIT-Bhubaneswar-CLI
+Author: Atharva Kulkarni
+Author-email: amk11@iitbbs.ac.in
+License: MIT
+Description: ![PyPI - Downloads](https://img.shields.io/pypi/dm/iitbbscliupdates.svg) ![PyPI](https://img.shields.io/pypi/v/iitbbscliupdates.svg) ![PyPI - License](https://img.shields.io/pypi/l/iitbbscliupdates.svg)
+        ## IIT Bhubaneswar CLI
+        CLI to get the following stuff related to institute:
+        * Holidays List for the current year.
+        * Top 30 headlines depicting the ongoings inside the institute.
+        
+        ### Installation
+        ```
+        $ pip install iitbbscliupdates
+        ```
+        ### Usage
+        After the installation, go to the command line :
+        1. To get the help menu: 
+        ```
+        $ iitbbscli --help
+        ```
+        2. To get the list of holidays:
+        ```
+        $ iitbbscli holidays
+        ```
+        3. To get the headlines:
+        ```
+        $ iitbbscli headlines
+        ```
+        4. To get the biometric attendance:
+        ```
+        $ iitbbscli attendance
+        ```
+        Then enter the username and password and press enter.
+Keywords: iitbbs iitbbsupdates iitbhubaneswar
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

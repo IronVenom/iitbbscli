@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="iitbbscliupdates",
-    version="0.2",
+    version="1",
     author="Atharva Kulkarni",
     author_email="amk11@iitbbs.ac.in",
     license='MIT',
@@ -15,7 +15,7 @@ setuptools.setup(
     keywords='iitbbs iitbbsupdates iitbhubaneswar',
     url='https://github.com/IronVenom/IIT-Bhubaneswar-CLI',
     packages=setuptools.find_packages(),
-    install_requires  = ['Click','requests','beautifulsoup4','prettytable','setuptools','lxml'],
+    install_requires  = ['Click','requests','beautifulsoup4','prettytable','setuptools','lxml','mechanize'],
     entry_points = '''
     [console_scripts]
     iitbbscli  = iitbbscli.app:main
