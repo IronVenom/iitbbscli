@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: iitbbscliupdates
-Version: 1.0.1
+Version: 1.0.8
 Summary: CLI for IIT Bhubaneswar updates.
 Home-page: https://github.com/IronVenom/IIT-Bhubaneswar-CLI
 Author: Atharva Kulkarni
@@ -11,6 +11,7 @@ Description: ![PyPI - Downloads](https://img.shields.io/pypi/dm/iitbbscliupdates
         CLI to get the following stuff related to institute:
         * Holidays List for the current year.
         * Top 30 headlines depicting the ongoings inside the institute.
+        * Biometric Attendance from ERP.
         
         ### Installation
         ```
