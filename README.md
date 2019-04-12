@@ -4,6 +4,7 @@ CLI to get the following stuff related to institute:
 * Holidays List for the current year.
 * Top 30 headlines depicting the ongoings inside the institute.
 * Biometric Attendance from ERP.
+* Results from ERP (SGPAs, CGPA and Report Card).
 
 ### Installation
 ```
@@ -26,4 +27,8 @@ $ iitbbscli headlines
 4. To get the biometric attendance:
 ```
 $ iitbbscli attendance
+```
+5. To get results of examinations:
+```
+$ iitbbscli result
 ```

@@ -98,5 +98,75 @@ def attendance():
 
 	print(biometric_attendance)
 
+@main.command(help = "Queries Related to results.")
+def result():
+	
+	Roll_No = input('Enter Roll No.:\n')
+	Date_of_birth = getpass.getpass("Enter Date of Birth (YYYY-MM-DD) :\n")
+	query = input('For SGPAs enter 1, for entire report card enter 2 and for CGPA enter 3.\n')
+
+	br = mechanize.Browser()
+	br.open("http://14.139.195.241/Result/login.php")
+	br.select_form(nr=0)
+	br['regno'] = Roll_No
+	br['dob'] = Date_of_birth
+	br.submit()
+	result = br.response()
+	br.open('http://14.139.195.241/Result/result.php')
+	result = br.response().read()
+	s = bs4.BeautifulSoup(result, 'html.parser')
+
+	# Getting stuff
+
+	semesters = s.findAll('td',colspan = "5")
+	ids = s.findAll('td',align = "center", width = "20%")
+	subjects = s.findAll('td',style = "padding-left: 10px", width = "50%")
+	ltps = s.findAll('td',align = "center", width = "10%")
+	cgpas=s.findAll('td',align = "right", colspan = "3")
+	sgpas=s.findAll('td',align = "left", colspan = "2")
+
+	# Removing Tags
+
+	semesters = [str(i).split('<h3 class="sem-heading-page-center">')[1].split('</h3')[0] for i in semesters]
+	ids = [str(i).split('<b>')[1].split('</b>')[0] for i in ids]
+	subjects = [str(i).split('<td style="padding-left: 10px" width="50%">')[1].split('</td>')[0] for i in subjects]
+	ltps = [str(i).split('<b>')[1].split('</b>')[0] for i in ltps]
+	ltp = ltps[0::3]
+	grades = ltps[2::3]
+	credits = ltps[1::3]
+	cgpas = [str(i).split('<b>')[1].split('</b>')[0].split(" ")[0] for i in cgpas]
+	sgpas = [str(i).split('<b>')[1].split('</b>')[0].split(" ")[1] for i in sgpas]
+
+	if query == '1':
+
+		gpas = PrettyTable(['Semester','SGPA'])
+		gpa_l = []
+		for i in range(len(semesters)):
+			gpa_l.append([semesters[i],sgpas[i]])
+		for x in gpa_l:
+			gpas.add_row(x)
+		print('\n')
+		print(gpas)
+
+	elif query == '2':
+
+		report_Card = PrettyTable(['ID','Subject','L-T-P','Credits','Grade'])
+		rc = []
+		for i in range(len(ids)):
+			rc.append([ids[i],subjects[i],ltp[i],credits[i],grades[i]])
+		for x in rc:
+			report_Card.add_row(x)
+		print('\n')
+		print(report_Card)
+
+	elif query == '3':
+		
+		print('\n')
+		print(cgpas[-1])
+
+	else:
+
+		print('Please try again.')
+
 if __name__ == '__main__':
 	main()

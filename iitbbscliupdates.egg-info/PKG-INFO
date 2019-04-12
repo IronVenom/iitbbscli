@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: iitbbscliupdates
-Version: 1.4.5
+Version: 1.8
 Summary: CLI for IIT Bhubaneswar updates.
 Home-page: https://github.com/IronVenom/IIT-Bhubaneswar-CLI
 Author: Atharva Kulkarni
@@ -12,6 +12,7 @@ Description: ![PyPI - Downloads](https://img.shields.io/pypi/dm/iitbbscliupdates
         * Holidays List for the current year.
         * Top 30 headlines depicting the ongoings inside the institute.
         * Biometric Attendance from ERP.
+        * Results from ERP (SGPAs, CGPA and Report Card).
         
         ### Installation
         ```
@@ -34,6 +35,10 @@ Description: ![PyPI - Downloads](https://img.shields.io/pypi/dm/iitbbscliupdates
         4. To get the biometric attendance:
         ```
         $ iitbbscli attendance
+        ```
+        5. To get results of examinations:
+        ```
+        $ iitbbscli result
         ```
         
 Keywords: iitbbs iitbbsupdates iitbhubaneswar
