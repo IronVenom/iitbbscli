@@ -74,26 +74,13 @@ def attendance():
 	br['password'] = password
 	br.submit()
 	result = br.response()
-	html=result.read()
 	br.open('http://erp.iitbbs.ac.in//biometric/list_students.php')
-
-	result = br.response()
-	html=result.read()
-	f = open('s.txt','wb')
-	f.write(html)
-
-	contents = open("s.txt","r")
-	with open("s.html", "w") as e:
-	    for lines in contents.readlines():
-	        e.write(lines + "\n")
-
-	s = bs4.BeautifulSoup(open('s.html'),'lxml')
+	result = br.response().read()
+	s = bs4.BeautifulSoup(result, 'html.parser')
 	p = s.find('table',{'class':'table'})
 	q = p.find_all('td')
 	q = [str(i) for i in q]
-	q = [i.replace(" ", "") for i in q]
-	r = [i.split('\n')[2] for i in q]
-	r = [i.split('\t')[0] for i in r]
+	r = [i.split('\t')[0].split('\n')[1].lstrip() for i in q]
 	ids = r[0::5]
 	courses = r[1::5]
 	present = r[2::5]

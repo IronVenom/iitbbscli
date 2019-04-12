@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: iitbbscliupdates
-Version: 1.3.1
+Version: 1.4
 Summary: CLI for IIT Bhubaneswar updates.
 Home-page: https://github.com/IronVenom/IIT-Bhubaneswar-CLI
 Author: Atharva Kulkarni
@@ -35,7 +35,7 @@ Description: ![PyPI - Downloads](https://img.shields.io/pypi/dm/iitbbscliupdates
         ```
         $ iitbbscli attendance
         ```
-        Then enter the username and password and press enter.
+        
 Keywords: iitbbs iitbbsupdates iitbhubaneswar
 Platform: UNKNOWN
 Description-Content-Type: text/markdown
