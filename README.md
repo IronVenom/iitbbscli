@@ -17,21 +17,25 @@ After the installation, go to the command line :
 $ iitbbscli --help
 ```
 ![Alt Text](https://github.com/IronVenom/iitbbscli/blob/master/assets/help.JPG)
+
 2. To get the list of holidays:
 ```
 $ iitbbscli holidays
 ```
 ![Alt Text](https://github.com/IronVenom/iitbbscli/blob/master/assets/holidays.JPG)
+
 3. To get the headlines:
 ```
 $ iitbbscli headlines
 ```
 ![Alt Text](https://github.com/IronVenom/iitbbscli/blob/master/assets/headlines.JPG)
+
 4. To get the biometric attendance:
 ```
 $ iitbbscli attendance
 ```
 ![Alt Text](https://github.com/IronVenom/iitbbscli/blob/master/assets/attendance_.png)
+
 5. To get results of examinations:
 ```
 $ iitbbscli result
