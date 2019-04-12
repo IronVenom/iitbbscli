@@ -3,6 +3,7 @@ import requests
 import bs4
 from prettytable import PrettyTable
 import mechanize
+import getpass
 
 @click.group()
 def main():
@@ -64,8 +65,8 @@ def headlines():
 @main.command(help = "Gives attendance")
 def attendance():
 
-	username = input('Enter username\n')
-	password = input('Enter password\n')
+	username = input('Enter Username:\n')
+	password = getpass.getpass("Enter Password:\n")
 
 	br = mechanize.Browser()
 	br.open("http://erp.iitbbs.ac.in/")
