@@ -42,5 +42,6 @@ $ iitbbscli result
 ```
 ![Alt Text](https://github.com/IronVenom/iitbbscli/blob/master/assets/cgpa_.png)
 ![Alt Text](https://github.com/IronVenom/iitbbscli/blob/master/assets/report%20card_.png)
-![Alt Text](https://github.com/IronVenom/iitbbscli/blob/master/assets/attendance_.pnghttps://github.com/IronVenom/iitbbscli/blob/master/assets/sgpa_.png)
+![Alt Text](https://github.com/IronVenom/iitbbscli/blob/master/assets/sgpa_.png)
+
 
