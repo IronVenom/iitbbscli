@@ -1,4 +1,5 @@
-![PyPI - Downloads](https://img.shields.io/pypi/dm/iitbbscliupdates.svg) ![PyPI](https://img.shields.io/pypi/v/iitbbscliupdates.svg) ![PyPI - License](https://img.shields.io/pypi/l/iitbbscliupdates.svg)
+![PyPI](https://img.shields.io/pypi/v/iitbbscliupdates.svg) ![PyPI - License](https://img.shields.io/pypi/l/iitbbscliupdates.svg)
+
 ## IIT Bhubaneswar CLI
 A CLI (Command Line Interface) App to get the following stuff related to institute:
 * Holidays List for the current year.
