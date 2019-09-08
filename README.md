@@ -31,7 +31,7 @@ $ iitbbscli headlines
 ```
 ![Alt Text](https://github.com/IronVenom/iitbbscli/blob/master/assets/headlines.JPG)
 
-4. To get the biometric attendance:
+4. To get the biometric attendance: ( Username and Password are the ones that are required in the ERP System )
 ```
 $ iitbbscli attendance
 ```
