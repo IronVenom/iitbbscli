@@ -4,6 +4,7 @@ import bs4
 from prettytable import PrettyTable
 import mechanize
 import getpass
+from datetime import datetime
 
 @click.group()
 def main():
@@ -11,7 +12,7 @@ def main():
 
 @main.command(help = "Gives a list of holidays")
 def holidays():
-	
+
 	#Getting Data from website using net scraping.
 	hols_html = requests.get('http://www.iitbbs.ac.in/holidays-list.php')
 	holidays = bs4.BeautifulSoup(hols_html.text, 'lxml')
@@ -75,7 +76,12 @@ def attendance():
 	br['password'] = password
 	br.submit()
 	result = br.response()
-	br.open('http://erp.iitbbs.ac.in//biometric/list_students.php')
+	currentMonth = datetime.today()
+	currentMonth = currentMonth.month
+	if currentMonth>=1 and currentMonth<=6:
+		br.open('http://erp.iitbbs.ac.in//biometric/list_students.php')
+	else:	
+		br.open('https://erp.iitbbs.ac.in/biometric/list_students_spring.php')
 	result = br.response().read()
 	s = bs4.BeautifulSoup(result, 'html.parser')
 	p = s.find('table',{'class':'table'})
@@ -106,13 +112,13 @@ def result():
 	query = input('For SGPAs enter 1, for entire report card enter 2 and for CGPA enter 3.\n')
 
 	br = mechanize.Browser()
-	br.open("http://14.139.195.241/Result/login.php")
+	br.open("http://webapps.iitbbs.ac.in/Result/login.php")
 	br.select_form(nr=0)
 	br['regno'] = Roll_No
 	br['dob'] = Date_of_birth
 	br.submit()
 	result = br.response()
-	br.open('http://14.139.195.241/Result/result.php')
+	br.open('http://webapps.iitbbs.ac.in/Result/login.php')
 	result = br.response().read()
 	s = bs4.BeautifulSoup(result, 'html.parser')
 
