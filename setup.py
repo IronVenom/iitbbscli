@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
 	include_package_data=True,
     name="iitbbscliupdates",
-    version="1.9",
+    version="1.9.1",
     author="Atharva Kulkarni",
     author_email="amk11@iitbbs.ac.in",
     license='MIT',
